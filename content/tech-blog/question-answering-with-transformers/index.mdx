@@ -1,0 +1,42 @@
+---
+title: 'Question Answering with Transformers'
+date: '2024-02-05'
+spoiler:
+images: ['./attention_diagram.jpg']
+---
+
+In this post, my primary focus is to explore how transformers enable question-answering systems like ChatGPT. To do this, I'll be using the user-friendly interface provided by Hugging Face's pipeline to create a basic Python notebook example.
+
+My journey through various Machine Learning courses at university provided me a solid grasp of foundational models such as MLPs, ConvNets, and transformers. I extensively applied the first two while working on my thesis on [Geometric Deep Learning in analyzing the human brain's structure](/tech-blog/geometric-deep-learning-overview/). However, a recent question from my girlfriend made me pause.
+
+> How does ChatGPT work behind the scenes?
+
+Unable to answer this question in the simple terms made me realize that my understanding of transformers wasn't as deep as I had thought. This weekend, I've decided to dive deeper into the world of transformers. The goal is to create a practical demo that can generate answers from a specified question and text corpus.
+
+Let's dive in!
+
+## Recap of transformer architecture
+
+A Transformer is a type of neural network architecture designed for handling sequences of data, such as text sentences or time series. The paper [Attention Is All You Need](https://arxiv.org/abs/1706.03762v7) introduced transformer architecture to address limitations in previous sequence models like recurrent neural networks or convolutional neural networks. The Transformer’s self-attention mechanism allows it to consider the relationships between all elements in a sequence simultaneously, capturing complex dependencies.
+
+Transformer model was primarily designed for sequence-to-sequence tasks, such as machine translation, where the goal is to convert a sequence of words in one language to a sequence of words in another language. However, its architecture has proven to be versatile and effective for a wide range of other tasks as well, including question answering or sentiment analysis tasks.
+
+<ImageComponent
+  image={props.frontmatter.images[0]}
+  description="The Transformer Model - from the 'Attention Is All You Need' paper"
+></ImageComponent>
+
+The Transformer’s operation can be broken down into several steps, which can be viewed from a more technical aspect:
+
+- **Input Embedding**: The input sequence (e.g., a sentence) is transformed into vectors using embeddings. These vectors represent the words or tokens in a meaningful way.
+- **Self-Attention Mechanism**: The Core of the Transformer For each word in the input, the model calculates its importance in relation to all other words. This is done through dot products of queries, keys, and values, which create attention scores. The attention scores determine how much focus should be placed on each word’s information when generating the representation.
+- **Multi-Head Attention**: Instead of relying on a single self-attention mechanism, multiple attention mechanisms (heads) operate in parallel. Each head focuses on different aspects of the data, allowing the model to capture different types of relationships.
+- **Positional Encoding**: Since the Transformer doesn’t inherently understand the order of words in a sequence, positional encodings are added to the embeddings. This helps the model differentiate between the positions of different words.
+- **Encoder and Decoder**: The Transformer architecture has two parts: the encoder and the decoder. The encoder processes the input sequence and captures its meaning, while the decoder generates the output sequence based on the encoder’s information and previously generated tokens.
+- **Decoder Self-Attention and Encoder-Decoder Attention**: In the decoder, self-attention is used to focus on the generated tokens while generating the output sequence. Additionally, encoder-decoder attention helps the decoder align with relevant parts of the input sequence.
+- **Position-wise Feedforward Network**: After the attention mechanism, each layer includes a position-wise feedforward neural network. This network is applied independently to each position in the sequence, adding a non-linear transformation to the representations.
+- **Output Generation**: The decoder uses its final layer’s output to generate the output sequence. This output is transformed into a probability distribution over the vocabulary using a softmax function. During training, the model tries to minimize the difference between the predicted distribution and the actual target sequence’s distribution.
+
+## Question answering with transformer
+
+## Simple example in Python
