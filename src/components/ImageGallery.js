@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { rhythm, scale } from '../utils/typography';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Keyboard } from 'swiper';
 import { GatsbyImage, getSrcSet, getImage } from 'gatsby-plugin-image';
@@ -27,8 +26,8 @@ const ImageGallery = (props) => {
   const pageWrapperStyle = {
     marginLeft: 'auto',
     marginRight: 'auto',
-    maxWidth: rhythm(30),
-    padding: `2rem ${rhythm(3 / 4)}`,
+    // maxWidth: rhythm(30),
+    // padding: `2rem ${rhythm(3 / 4)}`,
     width: '100%',
   };
 

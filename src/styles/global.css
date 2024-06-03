@@ -74,30 +74,6 @@ html {
   }
 }
 
-html,
-body {
-  overflow-x: clip;
-}
-
-body {
-  position: relative;
-}
-
-ul,
-ol {
-  margin-left: 1.75rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  scroll-margin-top: 100px;
-  scroll-snap-margin-top: 100px; /* iOS 11 and older */
-}
-
 th,
 td {
   border-bottom: 1px solid var(--post-outline);

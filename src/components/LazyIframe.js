@@ -5,12 +5,7 @@ import useIntersectionObserver from '@react-hook/intersection-observer';
 
 import './layout/Container.css';
 
-const LazyIframe = ({
-  children,
-  height,
-  marginBottom = '0',
-  wrapperClassName,
-}) => {
+const LazyIframe = ({ children, height, marginBottom = '0', className }) => {
   const containerRef = useRef();
   const lockRef = useRef(false);
   const { isIntersecting } = useIntersectionObserver(containerRef);
@@ -19,10 +14,7 @@ const LazyIframe = ({
   }
   return (
     <div
-      className={classnames(
-        'layout-container layout-iframe-container',
-        wrapperClassName
-      )}
+      className={classnames('layout-iframe-container', className)}
       style={{
         height: `calc(${height} + ${marginBottom}`,
         marginBottom: marginBottom,

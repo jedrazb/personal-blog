@@ -3,9 +3,7 @@ import { Link } from 'gatsby';
 
 import './NavBar.css';
 
-import { scale } from '../utils/typography';
-
-function NavBar({ title, location, toggle }) {
+function NavBar({ title, toggle }) {
   const [opened, setOpened] = useState(false);
 
   const closeMenu = () => {
@@ -43,7 +41,7 @@ function NavBar({ title, location, toggle }) {
         <div className="nav-container">
           <h1
             style={{
-              ...scale(0.5),
+              // ...scale(0.5),
               marginBottom: 0,
               marginTop: 0,
             }}

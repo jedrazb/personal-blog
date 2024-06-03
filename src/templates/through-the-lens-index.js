@@ -1,17 +1,14 @@
 import { Link, graphql } from 'gatsby';
 import {
   formatPostDate,
-  formatReadingTime,
   formatNumberOfPhotos,
   formatPostLocation,
 } from '../utils/helpers';
 
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
-import { rhythm } from '../utils/typography';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import './through-the-lens-index.css';
@@ -73,18 +70,20 @@ class ThroughTheLensIndexTemplate extends React.Component {
                       style={{
                         color: 'var(--textLink)',
                         fontFamily: 'Montserrat, sans-serif',
-                        fontSize: rhythm(5 / 8),
-                        margin: rhythm(1 / 3),
+                        // fontSize: rhythm(5 / 8),
+                        // margin: rhythm(1 / 3),
                       }}
                     >
                       {title}
                     </h3>
                     <div
-                      style={{
-                        margin: rhythm(1 / 3),
-                        marginBottom: rhythm(1 / 4),
-                        marginTop: 0,
-                      }}
+                      style={
+                        {
+                          // margin: rhythm(1 / 3),
+                          // marginBottom: rhythm(1 / 4),
+                          // marginTop: 0,
+                        }
+                      }
                     >
                       <small>
                         {formatPostDate(node.frontmatter.date)}

@@ -1,16 +1,10 @@
 import { Link, graphql } from 'gatsby';
-import {
-  formatPostDate,
-  formatReadingTime,
-  formatNumberOfPhotos,
-} from '../utils/helpers';
+import { formatPostDate, formatReadingTime } from '../utils/helpers';
 
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
-import { rhythm } from '../utils/typography';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 class TechBlogIndexTemplate extends React.Component {
@@ -64,13 +58,13 @@ class TechBlogIndexTemplate extends React.Component {
                       style={{
                         color: 'var(--textLink)',
                         fontFamily: 'Montserrat, sans-serif',
-                        fontSize: rhythm(4 / 5),
-                        marginBottom: rhythm(1 / 3),
-                        marginTop: rhythm(1 / 3),
-                        paddingTop: rhythm(1 / 3),
-                        paddingLeft: rhythm(1 / 3),
-                        paddingRight: rhythm(1 / 3),
-                        paddingBottom: rhythm(1 / 6),
+                        // fontSize: rhythm(4 / 5),
+                        // marginBottom: rhythm(1 / 3),
+                        // marginTop: rhythm(1 / 3),
+                        // paddingTop: rhythm(1 / 3),
+                        // paddingLeft: rhythm(1 / 3),
+                        // paddingRight: rhythm(1 / 3),
+                        // paddingBottom: rhythm(1 / 6),
                       }}
                     >
                       {title}
@@ -81,11 +75,13 @@ class TechBlogIndexTemplate extends React.Component {
                     )}
 
                     <div
-                      style={{
-                        padding: rhythm(1 / 3),
-                        paddingBottom: 0,
-                        paddingTop: rhythm(1 / 5),
-                      }}
+                      style={
+                        {
+                          // padding: rhythm(1 / 3),
+                          // paddingBottom: 0,
+                          // paddingTop: rhythm(1 / 5),
+                        }
+                      }
                     >
                       <small>
                         {formatPostDate(node.frontmatter.date)}
@@ -95,11 +91,13 @@ class TechBlogIndexTemplate extends React.Component {
                     </div>
                   </header>
                   <p
-                    style={{
-                      padding: rhythm(1 / 3),
-                      marginBottom: 0,
-                      paddingTop: rhythm(1 / 6),
-                    }}
+                    style={
+                      {
+                        // padding: rhythm(1 / 3),
+                        // marginBottom: 0,
+                        // paddingTop: rhythm(1 / 6),
+                      }
+                    }
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.spoiler,
                     }}

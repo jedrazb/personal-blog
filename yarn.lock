@@ -5753,17 +5753,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compass-vertical-rhythm@npm:^1.4.5":
-  version: 1.4.5
-  resolution: "compass-vertical-rhythm@npm:1.4.5"
-  dependencies:
-    convert-css-length: ^1.0.1
-    object-assign: ^4.1.0
-    parse-unit: ^1.0.1
-  checksum: 52d19c8bf1bb6e36299792c5cc81aa635b816aaedbefb67b19bc69e302117406e6a6f2572d44101119155d17c921a97b96e4ae04828ce8145e7fae72a432467c
-  languageName: node
-  linkType: hard
-
 "compressible@npm:~2.0.16":
   version: 2.0.18
   resolution: "compressible@npm:2.0.18"
@@ -5850,13 +5839,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"console-polyfill@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "console-polyfill@npm:0.1.2"
-  checksum: b2e060ce7b09544547024dfd28a643cbf3f526a3a3ac56d9b57d3b867b6735810fb2248a934627ab1e95ddb0c2f5eca073f1c1a94ef5b986bc559a8a68ed5840
-  languageName: node
-  linkType: hard
-
 "constant-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "constant-case@npm:3.0.4"
@@ -5881,16 +5863,6 @@ __metadata:
   version: 1.0.5
   resolution: "content-type@npm:1.0.5"
   checksum: 566271e0a251642254cde0f845f9dd4f9856e52d988f4eb0d0dcffbb7a1f8ec98de7a5215fc628f3bce30fe2fb6fd2bc064b562d721658c59b544e2d34ea2766
-  languageName: node
-  linkType: hard
-
-"convert-css-length@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "convert-css-length@npm:1.0.2"
-  dependencies:
-    console-polyfill: ^0.1.2
-    parse-unit: ^1.0.1
-  checksum: f97ef362a72109c052bb7da87a7c67ec4c2159e2d817d2f86f200f54c78b323e3104d837f38138e91688fddf023dfa288d3d76684e07de152971e14b6fe3315f
   languageName: node
   linkType: hard
 
@@ -9064,21 +9036,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typography@npm:^5.13.1":
-  version: 5.13.1
-  resolution: "gatsby-plugin-typography@npm:5.13.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    react: ^18.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^0.0.0
-    react-typography: ^0.16.1 || ^1.0.0-alpha.0
-    typography: ^0.16.0 || ^1.0.0-alpha.0
-  checksum: 830a531b98786b880efb8929ca80f739dc8d64d2d3e0b53ed71eab6f5c4007b6a04fbeaffa74fb8f6ef77551ebc3813444b68ac3f3349177823db9b7f74a3f97
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.13.1":
   version: 4.13.1
   resolution: "gatsby-plugin-utils@npm:4.13.1"
@@ -9873,13 +9830,6 @@ __metadata:
     section-matter: ^1.0.0
     strip-bom-string: ^1.0.0
   checksum: 37717bd424344487d655392251ce8d8878a1275ee087003e61208fba3bfd59cbb73a85b2159abf742ae95e23db04964813fdc33ae18b074208428b2528205222
-  languageName: node
-  linkType: hard
-
-"gray-percentage@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "gray-percentage@npm:2.0.0"
-  checksum: 6a6eee98c771aca0574d1fb7ef7a8cc4fb02630cbb674e822d667552d753200a0dd49704c380189f2646e69a002685d1235c00f1fbc6c043c5cc7ef177c112e8
   languageName: node
   linkType: hard
 
@@ -11364,7 +11314,6 @@ __metadata:
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: 5.13.1
     gatsby-plugin-sitemap: ^6.13.1
-    gatsby-plugin-typography: ^5.13.1
     gatsby-remark-autolink-headers: 6.13.1
     gatsby-remark-component-parent2div: ^1.2.3
     gatsby-remark-copy-linked-files: ^6.13.1
@@ -11391,7 +11340,6 @@ __metadata:
     react-katex: ^3.0.1
     react-simple-maps: ^3.0.0
     react-tooltip: ^5.26.3
-    react-typography: ^0.16.23
     reading-time: ^1.5.0
     rehype-katex: ^7.0.0
     rehype-react: ^8.0.0
@@ -11399,8 +11347,6 @@ __metadata:
     remark-math: ^5.0.1
     swiper: ^8.3.2
     tailwindcss: ^3.4.3
-    typography: ^0.16.24
-    typography-theme-wordpress-2016: ^0.16.19
   languageName: unknown
   linkType: soft
 
@@ -12009,13 +11955,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.isnumber@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "lodash.isnumber@npm:3.0.3"
-  checksum: 913784275b565346255e6ae6a6e30b760a0da70abc29f3e1f409081585875105138cda4a429ff02577e1bc0a7ae2a90e0a3079a37f3a04c3d6c5aaa532f4cab2
-  languageName: node
-  linkType: hard
-
 "lodash.iteratee@npm:^4.7.0":
   version: 4.7.0
   resolution: "lodash.iteratee@npm:4.7.0"
@@ -12084,7 +12023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.0.0, lodash@npm:^4.0.1, lodash@npm:^4.13.1, lodash@npm:^4.17.10, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4, lodash@npm:~4.17.0":
+"lodash@npm:^4.0.0, lodash@npm:^4.0.1, lodash@npm:^4.17.10, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4, lodash@npm:~4.17.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -13904,15 +13843,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"modularscale@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "modularscale@npm:1.0.2"
-  dependencies:
-    lodash.isnumber: ^3.0.0
-  checksum: 2316b302c34e47a65af25122465a2fd1ba0f1857700cac64d689f2c28d1a693f5155ef2b725044ea1de3a6f0ead5e644fa48099d860bfe3a03d301d6e085f161
-  languageName: node
-  linkType: hard
-
 "moment@npm:^2.29.4":
   version: 2.30.1
   resolution: "moment@npm:2.30.1"
@@ -14760,13 +14690,6 @@ __metadata:
   dependencies:
     protocols: ^2.0.0
   checksum: 244b46523a58181d251dda9b888efde35d8afb957436598d948852f416d8c76ddb4f2010f9fc94218b4be3e5c0f716aa0d2026194a781e3b8981924142009302
-  languageName: node
-  linkType: hard
-
-"parse-unit@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "parse-unit@npm:1.0.1"
-  checksum: fdd7d2b91a3e536d7835e408caec21345eac6d4ae442d0cfecd5ebb8750c89cfc3ed4cd5da389826313134aedca04e30e52188005b564ec13c212720821731c8
   languageName: node
   linkType: hard
 
@@ -16050,15 +15973,6 @@ __metadata:
     react: ">=16.14.0"
     react-dom: ">=16.14.0"
   checksum: 52e37dc2726f0c2e47505cf3ce1d51576d2007b16b470970c7d26f8c5afb14bd36571ca9b18eb151bf6d6d892fddb91900a51e834539bc43bacba66a46d6b370
-  languageName: node
-  linkType: hard
-
-"react-typography@npm:^0.16.23":
-  version: 0.16.23
-  resolution: "react-typography@npm:0.16.23"
-  peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: f60480565a9ce3077744da0e5c017a44e68f978d86f0d9fa7e38f25905444bc74429a0bfe6302b2ca90d4e40b75d23fda389665a7c6635abe6e3f1bc63f43a97
   languageName: node
   linkType: hard
 
@@ -18532,45 +18446,6 @@ __metadata:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
-  languageName: node
-  linkType: hard
-
-"typography-breakpoint-constants@npm:^0.16.19":
-  version: 0.16.19
-  resolution: "typography-breakpoint-constants@npm:0.16.19"
-  checksum: ee38d84b4ac54c92dfc086eaeba42ba89377fe2d6116a9c03e8afc1ffc0089709273fb5e3e4c78d7b3b790f0f1805776b55e996e9c30b0d887375b7ed55c824a
-  languageName: node
-  linkType: hard
-
-"typography-normalize@npm:^0.16.19":
-  version: 0.16.19
-  resolution: "typography-normalize@npm:0.16.19"
-  checksum: a0e23316fefae4dcf8468cd218cba4ff9ae1626bd0c9043c555a3bc7b866a4242bbcef4b9ec6d7ee8d5be371a4285d8009905916c884ab79261cecd749a6d7b6
-  languageName: node
-  linkType: hard
-
-"typography-theme-wordpress-2016@npm:^0.16.19":
-  version: 0.16.19
-  resolution: "typography-theme-wordpress-2016@npm:0.16.19"
-  dependencies:
-    gray-percentage: ^2.0.0
-    typography-breakpoint-constants: ^0.16.19
-  checksum: 17845dbf0699bcc1e06dffb98ba9064d3d4919999c99ddb43aea059bbaf5afe2ea6d0d55a632d160146507fa14b4ae6df8ea25063d10ddab30097312301721a5
-  languageName: node
-  linkType: hard
-
-"typography@npm:^0.16.24":
-  version: 0.16.24
-  resolution: "typography@npm:0.16.24"
-  dependencies:
-    compass-vertical-rhythm: ^1.4.5
-    decamelize: ^1.2.0
-    gray-percentage: ^2.0.0
-    lodash: ^4.13.1
-    modularscale: ^1.0.2
-    object-assign: ^4.1.0
-    typography-normalize: ^0.16.19
-  checksum: 8bb8418911ba28c0d4dfe0b30fede8b9b7d490fe5f1f22fff57110dcfdc4347645fc45dd111402b73c684b4f66f6387a0151c112f3871aab16f7382d12cbba11
   languageName: node
   linkType: hard
 

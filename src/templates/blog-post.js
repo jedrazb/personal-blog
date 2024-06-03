@@ -26,7 +26,6 @@ import {
   formatReadingTime,
   formatNumberOfPhotos,
 } from '../utils/helpers';
-import { rhythm, scale } from '../utils/typography';
 
 import 'katex/dist/katex.min.css';
 import './blog-post.css';
@@ -122,10 +121,10 @@ class BlogPostTemplate extends React.Component {
               </Link>
               <p
                 style={{
-                  ...scale(-1 / 5),
+                  // ...scale(-1 / 5),
                   display: 'block',
-                  marginBottom: rhythm(1),
-                  marginTop: rhythm(-4 / 5),
+                  // marginBottom: rhythm(1),
+                  // marginTop: rhythm(-4 / 5),
                 }}
               >
                 {formatPostDate(post.frontmatter.date)}
@@ -173,7 +172,7 @@ class BlogPostTemplate extends React.Component {
           <h3
             style={{
               fontFamily: 'Montserrat, sans-serif',
-              marginTop: rhythm(0.25),
+              // marginTop: rhythm(0.25),
             }}
           >
             <Link

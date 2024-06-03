@@ -1,10 +1,8 @@
 import React from 'react';
 import { GatsbyImage, getImage, getSrc, getSrcSet } from 'gatsby-plugin-image';
-import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui';
+import classnames from 'classnames';
 
 import { selectThumbnailFromSrcSet } from '../utils/imageUtils';
-
-import './ImageComponent.css';
 
 import '@fancyapps/ui/dist/fancybox.css';
 
@@ -17,19 +15,23 @@ const ImageComponent = ({
 }) => {
   return (
     <figure
-      style={{
-        display: 'block',
-        marginBottom: isRow ? '0.6rem' : noPadding ? '0' : '1.5rem',
-        maxWidth: '1024px',
-      }}
-      className="image-component"
+      className={classnames(
+        'block',
+        'max-w-screen-lg',
+        'focus:outline-none focus:shadow-none select-none',
+        {
+          'mb-1.5': isRow,
+          'mb-0': noPadding,
+          'mb-6': !isRow && !noPadding,
+        }
+      )}
     >
       <a
         href={getSrc(image)}
         data-fancybox="gallery"
         data-caption={description}
         data-thumb={selectThumbnailFromSrcSet(getSrcSet(image))}
-        className="image-component-fancybox"
+        className="no-underline text-transparent"
         itemType="https://schema.org/ImageObject"
         itemScope=""
       >

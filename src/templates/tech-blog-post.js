@@ -19,7 +19,6 @@ import {
   ThreePhotosContainer,
 } from '../components/layout/Container';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
-import { rhythm, scale } from '../utils/typography';
 
 import {
   StatefulSliderPicker,
@@ -112,12 +111,14 @@ class TechBlogPostTemplate extends React.Component {
                 <p>{'Tech Blog'}</p>
               </Link>
               <p
-                style={{
-                  ...scale(-1 / 5),
-                  display: 'block',
-                  marginBottom: rhythm(1),
-                  marginTop: rhythm(-4 / 5),
-                }}
+                style={
+                  {
+                    // ...scale(-1 / 5),
+                    // display: 'block',
+                    // marginBottom: rhythm(1),
+                    // marginTop: rhythm(-4 / 5),
+                  }
+                }
               >
                 {formatPostDate(post.frontmatter.date)}
                 <span style={{ margin: '0 0.15rem' }}>{` • `}</span>
@@ -130,14 +131,16 @@ class TechBlogPostTemplate extends React.Component {
         <aside>
           <nav>
             <ul
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'space-between',
-                listStyle: 'none',
-                padding: 0,
-                marginLeft: 0,
-              }}
+              style={
+                {
+                  // display: 'flex',
+                  // flexWrap: 'wrap',
+                  // justifyContent: 'space-between',
+                  // listStyle: 'none',
+                  // padding: 0,
+                  // marginLeft: 0,
+                }
+              }
             >
               <li>
                 {previous && (
@@ -158,7 +161,7 @@ class TechBlogPostTemplate extends React.Component {
           <h3
             style={{
               fontFamily: 'Montserrat, sans-serif',
-              marginTop: rhythm(0.25),
+              // marginTop: rhythm(0.25),
             }}
           >
             <Link
@@ -166,7 +169,7 @@ class TechBlogPostTemplate extends React.Component {
                 boxShadow: 'none',
                 textDecoration: 'none',
                 color: 'var(--textLink)',
-                fontSize: rhythm(4 / 5),
+                // fontSize: rhythm(4 / 5),
               }}
               to={'/'}
             >
@@ -178,7 +181,7 @@ class TechBlogPostTemplate extends React.Component {
                 boxShadow: 'none',
                 textDecoration: 'none',
                 color: 'var(--textLink)',
-                fontSize: rhythm(4 / 5),
+                // fontSize: rhythm(4 / 5),
               }}
               to={'/tech-blog/'}
             >

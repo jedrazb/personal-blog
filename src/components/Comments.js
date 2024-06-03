@@ -4,8 +4,6 @@ import { Disqus } from 'gatsby-plugin-disqus';
 
 import LazyIframe from './LazyIframe';
 
-import './Comments.css';
-
 const Comments = ({ url, id, title }) => {
   const disqusConfig = {
     url: url,
@@ -16,7 +14,7 @@ const Comments = ({ url, id, title }) => {
     <div>
       <h3 id="comments">Comments</h3>
       <hr />
-      <LazyIframe wrapperClassName={'comments-container'}>
+      <LazyIframe className={'block'}>
         <Disqus config={disqusConfig} />
       </LazyIframe>
     </div>

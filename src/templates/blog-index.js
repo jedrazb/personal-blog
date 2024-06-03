@@ -11,7 +11,6 @@ import Layout from '../components/Layout';
 import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
-import { rhythm } from '../utils/typography';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import './blog-index.css';
@@ -72,7 +71,7 @@ class BlogIndexTemplate extends React.Component {
                           className={'blog-post-tile-title'}
                           style={{
                             fontFamily: 'Montserrat, sans-serif',
-                            fontSize: rhythm(4 / 5),
+                            // fontSize: rhythm(4 / 5),
                           }}
                         >
                           {title}
@@ -80,7 +79,7 @@ class BlogIndexTemplate extends React.Component {
 
                         <div
                           style={{
-                            paddingTop: rhythm(1 / 5),
+                            // paddingTop: rhythm(1 / 5),
                             paddingBottom: 0,
                           }}
                         >
@@ -96,8 +95,8 @@ class BlogIndexTemplate extends React.Component {
                       <p
                         style={{
                           marginBottom: 0,
-                          paddingTop: rhythm(1 / 6),
-                          paddingBottom: rhythm(1 / 3),
+                          // paddingTop: rhythm(1 / 6),
+                          // paddingBottom: rhythm(1 / 3),
                         }}
                         dangerouslySetInnerHTML={{
                           __html: node.frontmatter.spoiler,
